@@ -1,10 +1,10 @@
 # REGEX Tutorial
 
-Introductory paragraph (replace this with your text)
+REGEX Tutorial for beginners
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Regular expressions, commonly known as "regex," are a powerful tool used to search, manipulate, and extract text data. This tutorial aims to provide a comprehensive introduction to regex, covering the basics of syntax and operators.
 
 ## Table of Contents
 
@@ -99,9 +99,32 @@ Lazy matching, on the other hand, matches as few characters as possible while st
 
 ### Boundaries
 
+Boundaries are used to match specific positions within a string or text. They are not actual characters, but rather, they are assertions or conditions that define the start or end of a word, line, or string.
+
+There are different types of boundaries in regex, including:
+
+Start of Line (^): Matches the beginning of a line or string.
+
+End of Line ($): Matches the end of a line or string.
+
+Word Boundary (\b): Matches the position between a word character (any letter, digit, or underscore) and a non-word character (any character that is not a letter, digit, or underscore).
+
+Non-Word Boundary (\B): Matches the position that is not between a word character and a non-word character.
+
+Start of Word (\B): Matches the position that is not the start of a word.
+
+End of Word (\B): Matches the position that is not the end of a word.
+
+
 ### Back-references
 
+Back-references are a way to reference previously captured groups within the same pattern. When creating a regex pattern, you can use parentheses to create a capturing group, which will store the matched text for later use. 
+
+To use a back-reference, you simply need to include the number of the capturing group inside a backslash followed by that number. For example, if you have a capturing group that matches a string of digits, you could use a back-reference to match that same string of digits again later in the pattern.
+
+
 ### Look-ahead and Look-behind
+
 
 ## Author
 
