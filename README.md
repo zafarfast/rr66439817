@@ -125,7 +125,11 @@ To use a back-reference, you simply need to include the number of the capturing 
 
 ### Look-ahead and Look-behind
 
+Look-ahead and look-behind are zero-width assertions that allow you to match text based on the context surrounding it, without including the context in the match itself. Look-ahead and look-behind are similar in concept, but they look in different directions.
+
+Look-ahead (represented by (?=...)) matches a pattern only if it is followed by another pattern. For example, if you wanted to match all occurrences of the word "cat" that are followed by the word "dog", you could use a look-ahead assertion to match only the "cat" part of the text:
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Zafar Ahmed
+Github: https://github.com/zafarfast/rr66439817
