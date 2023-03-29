@@ -84,9 +84,18 @@ Grouping is the process of enclosing part of a regex pattern in parentheses (). 
 Capturing is the process of using parentheses () to define a subpattern within a regex pattern, and then using that subpattern to extract specific text from the matched string. Each set of parentheses creates a capturing group that can be accessed by its index or name. For example, the pattern (\d{3})-(\d{3}-\d{4}) captures a phone number in the format of "123-456-7890" and stores the area code and the rest of the number in separate capturing groups.
 
 ### Bracket Expressions
+A bracket expression (also known as a character class) is a way to match any single character from a set of characters. Bracket expressions are enclosed in square brackets [], and can contain a list of characters, ranges of characters, or a combination of both.
 
+For example, the pattern [xyz] matches any single character that is either "x", "y", or "z". The pattern [a-z] matches any single lowercase letter from "a" to "z", while the pattern [A-Z0-9] matches any single uppercase letter or digit.
 
 ### Greedy and Lazy Match
+
+Greedy and lazy matching are two ways to control how the pattern matching engine handles repeated patterns.
+
+Greedy matching is the default behavior, where the engine tries to match as many characters as possible while still satisfying the pattern. This means that a greedy quantifier, such as *, +, or {n,}, will match as many repetitions as possible before moving on to the next part of the pattern. For example, the pattern a.* b would match the entire string "afoo bar baz bqux" because the .* quantifier greedily matches all characters between the "a" and the "b".
+
+Lazy matching, on the other hand, matches as few characters as possible while still satisfying the pattern. This is achieved by adding a question mark ? after the greedy quantifier. For example, the pattern a.* ?b would match only the substring "ab" in the same string "afoo bar baz bqux".
+
 
 ### Boundaries
 
